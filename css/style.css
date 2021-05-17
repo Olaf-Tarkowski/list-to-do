@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body{
+    background-color: rgb(238, 237, 239);
+    margin:  50px 100px;
+    font-family: 'Montserrat', sans-serif;
+
+}
