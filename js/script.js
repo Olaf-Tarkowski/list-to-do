@@ -11,6 +11,19 @@
 
     ];
 
+    const addNewTask = (newTasksContent) => {
+        tasks.push({
+            content: newTasksContent,
+        });
+
+        render();
+    };
+
+    const removeTask = (index) => {
+        tasks.splice(index, 1);
+        render();
+    };
+
     const render = () => {
         let htmlString = "";
         for (const task of tasks) {
@@ -18,20 +31,22 @@
             <li
                 ${task.done ? " style=\"text-decoration: line-through\"" : ""}
             >
+            <button class="js-remove">usuń</button>
                 ${task.content}
             </li>
             `;
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
-    };
 
-    const addNewTask = (newTasksContent) => {
-        tasks.push({
-            content: newTasksContent,
+        const removeButtons = document.querySelectorAll(".js-remove");
+
+        removeButtons.forEach((removeButton, taskIndex) => {
+            removeButton.addEventListener("click", () => {
+                removeTask(taskIndex);
+            });
         });
-
-        render();
-    }
+    };
+   
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -42,7 +57,7 @@
             return;
         }
 
-        
+
         addNewTask(newTasksContent);
     };
 
@@ -51,7 +66,7 @@
 
         const form = document.querySelector(".js-form");
 
-        form.addEventListener("submit", onFormSubmit); 
+        form.addEventListener("submit", onFormSubmit);
     };
 
     init();
