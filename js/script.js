@@ -1,13 +1,5 @@
 {
     const tasks = [
-        {
-            content: "zjeść pierogi",
-            done: false,
-        },
-        {
-            content: "umyć naczynia",
-            done: true,
-        },
 
     ];
 
@@ -49,22 +41,24 @@
 
     const render = () => {
         let htmlString = "";
+
         for (const task of tasks) {
             htmlString += `
             <li
-                ${task.done ? " style=\"text-decoration: line-through\"" : ""}
+                class="list__item${task.done ? " list__item--done" : ""}"
             >
-            <button class="js-done">zrobione?</button>
-            <button class="js-remove">usuń</button>
+            <button class="button button--green js-done">✔</button>
+            <button class="button button--red js-remove">🗑</button>
                 ${task.content}
             </li>
             `;
         }
+
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
         bindEvents();
     };
-   
+
 
     const onFormSubmit = (event) => {
         event.preventDefault();

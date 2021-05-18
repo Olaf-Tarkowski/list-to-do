@@ -1,0 +1,14 @@
+.list{
+  
+}
+
+.list__item{
+    display: grid;
+    grid-template-columns: 25px 1fr 25px;
+    list-style-type: none;
+    border-bottom: 1px solid rgb(238, 237, 239);
+}
+
+.list__item--done{
+    text-decoration: line-through;
+}
