@@ -10,11 +10,15 @@
     border: none;
 }
 
-.button--red{
-    order: 1;
+.button--red{ 
+    align-self: center;
+    height: 25px;
+    font-size: 20px;
     background-color: red;
 }
 
 .button--green{
+    align-self: center;
+    height: 25px;
     background-color: green;
 }
