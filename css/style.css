@@ -12,3 +12,8 @@ html {
     font-family: 'Montserrat', sans-serif;
 
 }
+
+.main{
+    max-width: 1050px;
+    margin: 0 auto;
+}
