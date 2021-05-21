@@ -6,14 +6,13 @@ html {
     box-sizing: inherit;
 }
 
-.body{
+.body {
     background-color: rgb(238, 237, 239);
-    margin:  auto 20px;
+    margin: auto 20px;
     font-family: 'Montserrat', sans-serif;
-
 }
 
-.main{
+.main {
     max-width: 1050px;
     margin: 0 auto;
 }

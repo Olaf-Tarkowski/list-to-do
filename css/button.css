@@ -1,23 +1,23 @@
-.button{
+.button {
     color: white;
     border: none;
 }
 
-.button__form{
+.button__form {
     padding: 10px 15px;
     background-color: rgb(0, 115, 131);
     color: white;
     border: none;
 }
 
-.button--red{ 
+.button--red {
     align-self: center;
     height: 25px;
     font-size: 20px;
     background-color: red;
 }
 
-.button--green{
+.button--green {
     align-self: center;
     height: 25px;
     background-color: green;
