@@ -1,4 +1,5 @@
 .button {
+    transition: 0.5s;
     color: white;
     border: none;
 }
@@ -6,19 +7,38 @@
 .button__form {
     padding: 10px 15px;
     background-color: rgb(0, 115, 131);
-    color: white;
-    border: none;
+}
+.button__form:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 116, 131, 0.788);
+}
+
+.button__form:active{
+    background-color: rgb(14, 104, 116);
+    color: rgb(173, 173, 173);
 }
 
 .button--red {
-    align-self: center;
-    height: 25px;
-    font-size: 20px;
+
+    height: 30px;
+    width: 30px;
+    font-size: 17px;
     background-color: red;
 }
 
+.button--red:hover {
+    background-color: rgba(255, 0, 0, 0.699);
+}
+
 .button--green {
-    align-self: center;
-    height: 25px;
+
+    height: 30px;
+    width: 30px;
+    font-size: 17px;
     background-color: green;
 }
+
+.button--green:hover {
+    background-color: rgba(0, 128, 0, 0.836);
+}
+
