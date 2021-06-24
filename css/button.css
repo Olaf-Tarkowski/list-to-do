@@ -1,4 +1,5 @@
 .button {
+    font-size: 17px;
     transition: 1s;
     color: white;
     border: none;
@@ -9,7 +10,12 @@
     color: rgb(0, 115, 131);
 }
 
-.button--hidden{
+.button__teal:hover {
+    background-color: white;
+    color: rgba(0, 116, 131, 0.500);
+}
+
+.button--hidden {
     display: none;
 }
 
@@ -31,7 +37,6 @@
 .button--red {
     height: 30px;
     width: 30px;
-    font-size: 17px;
     background-color: red;
 }
 
