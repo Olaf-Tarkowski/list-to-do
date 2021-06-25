@@ -113,7 +113,8 @@
 
         if (newTasksContent !== "") {
             addNewTask(newTasksContent);
-        }
+        };
+        
         newTaskElement.value = "";
         newTaskElement.focus();
     };
